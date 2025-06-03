@@ -1,0 +1,27 @@
+:root{
+  --main-color:linear-gradient(346deg,rgba(87, 48, 4, 1) 0%, rgba(194, 114, 29, 1) 50%, rgba(237, 221, 83, 1) 100%);
+  --secondary-color: #0F0F0F;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: borde;
+}
+
+body{
+  background: var(--main-color);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+
+body h1{
+  font-family: 'Edu QLD Hand', cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;  
+}
