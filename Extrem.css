@@ -1,27 +1,56 @@
 :root{
   --main-color:linear-gradient(346deg,rgba(87, 48, 4, 1) 0%, rgba(194, 114, 29, 1) 50%, rgba(237, 221, 83, 1) 100%);
-  --secondary-color: #0F0F0F;
+  --secondary-color: radial-gradient(circle,rgba(255, 153, 0, 1) 0%, rgba(237, 221, 192, 1) 0%, rgba(247, 222, 163, 1) 100%);
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: borde;
+    margin: 0;
+    padding: 0;
+    box-sizing: borde;
 }
+
+.titulo{
+    color: rgb(100, 44, 0);
+    margin-top: -5px;
+}
+
+
+.menu a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.menu a:hover{
+    background-color: burlywood;
+    color:rgb(100, 44, 0);
+    transition: ease-in .4s;
+}
+
+.menu{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav{
+    padding: 2em;
+    background: var(--main-color);
+    display: flex;
+    justify-content: space-between
+}
+
 
 body{
-  background: var(--main-color);
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100vh;
+    background: var(--secondary-color);
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-
-body h1{
-  font-family: 'Edu QLD Hand', cursive;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;  
+h1{
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: italic;
 }
