@@ -10,23 +10,77 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Extrem.css">
 </head>
+
 <body>
-
-<div class="wrapper">
     <header>
-        <nav class="navbar">
-            <div class="titulo">
-                <h1>Cafe las Lomas</h1>
-            </div>
-            <ul class="menu">
-                <li><a class="activo" href="#">Menu</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Ubicacion</a></li>
-                <li><a href="#">Reservas</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <p class="logo">Cafe Las Lomas</p>
+            <nav>
+                <a href="#menu">Menu</a>
+                <a href="#cafecito">Nosotros</a>
+                <a href="#mapa">Ubicacion</a>
+                <a href="#reservas">Reservas</a>
+            </nav>
+        </div>
     </header>
-</div>
 
+    <section id="hero">
+        <h1>El cafe con la calidad mas alta</h1>
+        <button>Reserva Ya!</button>
+    </section>
+
+    <section id="cafecito">
+        <div class="container">
+            <div class="img-container"></div>
+                <h2>Nosotros</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus dolorum reprehenderit quia illum. Nemo modi, dicta alias amet eum consequatur, quisquam eligendi minima autem placeat fuga aliquam aperiam dolore nobis.</p>
+        </div>
+    </section>
+
+    <section id="menu">
+        <div class="container">
+            <h2>Nuestro <span class="color-acent">Menu</span></h2>
+            <div class="productos">
+                <div class="carta">
+                    <h3>Capuccino</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor minus labore, non necessitatibus, libero doloremque corporis qui modi architecto sed vitae perferendis ad facere natus mollitia dolores recusandae est delectus!</p>
+                    <button>Ordenar</button>
+                </div>
+                <div class="carta">
+                    <h3>Amaretto</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor minus labore, non necessitatibus, libero doloremque corporis qui modi architecto sed vitae perferendis ad facere natus mollitia dolores recusandae est delectus!</p>
+                    <button>Ordenar</button>
+                </div>
+                <div class="carta">
+                    <h3>Affogato</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor minus labore, non necessitatibus, libero doloremque corporis qui modi architecto sed vitae perferendis ad facere natus mollitia dolores recusandae est delectus!</p>
+                    <button>Ordenar</button>
+                </div>
+            </div>            
+        </div>
+    </section>
+
+    <section id="ubicacion">
+        <div class="container">
+            <h2>Ubicación</h2>
+            <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!4v1749073005007!6m8!1m7!1svg3lUccnUxMEFJJkWZJbMg!2m2!1d6.140189926831747!2d-75.61795406836436!3f169.3253958361529!4f-8.350986354385356!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <section id="reservas">
+        <h2>Reserva la Mejor Mesa en la Mejor Cafeteria</h2>
+        <div class="labels">
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="email" name="correo" placeholder="Correo Electrónico" required>
+            <textarea name="mensaje" placeholder="Detalles" required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy;Cafe las lomas 2025.<br>Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
