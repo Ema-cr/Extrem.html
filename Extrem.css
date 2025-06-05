@@ -1,56 +1,196 @@
-:root{
-  --main-color:linear-gradient(346deg,rgba(87, 48, 4, 1) 0%, rgba(194, 114, 29, 1) 50%, rgba(237, 221, 83, 1) 100%);
-  --secondary-color: radial-gradient(circle,rgba(255, 153, 0, 1) 0%, rgba(237, 221, 192, 1) 0%, rgba(247, 222, 163, 1) 100%);
+*{
+    box-sizing: border-box;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: borde;
+html{
+    scroll-behavior: smooth;
 }
 
-.titulo{
-    color: rgb(100, 44, 0);
-    margin-top: -5px;
-}
+h1{font-size: 3.5em;}
+h2{font-size: 2.9em;}
+p{font-size: 1.25em;}
+.logo{font-size: 3.0em;}
 
-
-.menu a{
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-}
-
-.menu a:hover{
-    background-color: burlywood;
-    color:rgb(100, 44, 0);
-    transition: ease-in .4s;
-}
-
-.menu{
-    display: flex;
-    width: 50%;
-    justify-content: space-around;
-    list-style: none;
-}
-
-nav{
-    padding: 2em;
-    background: var(--main-color);
-    display: flex;
-    justify-content: space-between
+.color-acent{
+    color: rgba(196, 131, 33, 1);
 }
 
 
 body{
-    background: var(--secondary-color);
     font-family: "Lato", sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     font-style: normal;
+    margin: 0;
 }
 
-h1{
-    font-family: "Lato", sans-serif;
-    font-weight: 900;
-    font-style: italic;
+button{
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 20px 30px;
+    border-radius: 10px;
+    border: 2px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color:white;
+    background-color:rgba(196, 131, 33, 1);
+}
+
+button:hover{
+    background-color: rgb(104, 64, 4);
+    transition: 0.5s;
+}
+
+.container{
+    max-width: 1400px;
+    margin:auto;
+}
+
+header{
+    background-color: rgb(240, 224, 201);
+}
+
+header .logo{
+    font-weight: bold;
+    margin: 0;
+    padding: 25px 30px;
+    color: rgba(196, 131, 33, 1);
+
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: chocolate;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    )
+    ,url(Media/cafete.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+
+#cafecito .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#menu{
+    text-align: center;
+    background-color: rgb(240, 224, 201);
+    color:white
+}
+
+
+#menu .container{
+    padding: 100px 12px;
+}
+
+#menu h2{
+    margin-top: 0;
+    font-size: 4em;
+
+}
+
+#menu p{
+    display: none;
+}
+
+#menu .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+)
+    ,url(Media/cafe-capuccino-1024x678.jpg);
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+)
+    ,url(Media/amaretto.jpg);
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(0deg,
+     rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+)
+    ,url(Media/affogato.jpg);
+}
+
+#ubicacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+    color: rgba(196, 131, 33, 1);
+    background-image: linear-gradient(0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+)
+    ,url(Media/cafe-adentro.png);
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 12px;
+}
+
+#reservas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 224, 201);
+    color: rgba(196, 131, 33, 1);
+}
+
+.labels{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
 }
