@@ -65,7 +65,7 @@ header .container{
 
 header nav{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
     padding-bottom: 25px;
 }
@@ -162,13 +162,13 @@ header a:hover{
     ,url(Media/affogato.jpg);
 }
 
-#ubicacion{
+.ubicacion{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     height: 90vh;
-    color: rgba(196, 131, 33, 1);
+    color: (196, 131, 33, 1);
     background-image: linear-gradient(0deg,
     rgba(0,0,0,0.5),
     rgba(0,0,0,0.5)
@@ -179,7 +179,21 @@ header a:hover{
     padding: 100px 12px;
 }
 
+.text{
+    color: white;
+}
+
+.text h2{
+    color:rgb(255, 255, 255)
+}
+
+
+#reservas h2{
+    color: rgb(139, 67, 0);
+}
+
 #reservas{
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -191,6 +205,41 @@ header a:hover{
 .labels{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    max-height: 500px;
+    max-width: 300px;
     padding: 20px;
+    gap: 20px;
+    border-radius: 15px;
+    background-color: rgba(196, 131, 33, 0.63);
+    color: white;
+}
+
+.reservas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.labels placeholder{
+    justify-content: center;
+}
+
+.labels input{
+    width: 15rem;
+    height: 4rem;
+    border-radius: 15px;
+}
+
+.labels textarea{
+    width: 15rem;
+    height: 4rem;
+    border-radius: 15px;
+    padding: 15px;   
+}
+
+.footer{
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
 }
