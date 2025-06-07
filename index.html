@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafe Las Lomas</title>
     <link rel="icon" href="Media/taza.png" type="image/x-icon">
+    <!-- Fuentes de Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Extrem.css">
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="Media/styles.css">
 </head>
 
 <body>
@@ -16,7 +18,7 @@
         <div class="container">
             <p class="logo">Cafe Las Lomas</p>
             <nav>
-                <a href="#menu">Menu</a>
+                <a href="#menu">Menú</a>
                 <a href="#cafecito">Nosotros</a>
                 <a href="#mapa">Ubicacion</a>
                 <a href="#reservas">Reservas</a>
@@ -27,46 +29,41 @@
     <section id="hero">
         <h1>Bienvenidos a El Cafe las Lomas</h1>
         <p>Tu rincón de calma y sabor en el bullicio de la ciudad.<br>
-        Aquí,cada taza cuenta una historia, cada grano es seleccionado a mano, y cada visita es una experiencia.</p>
-        <button>Reserva Ya!</button>
+        Aquí, cada taza cuenta una historia, cada grano es seleccionado a mano, y cada visita es una experiencia.</p>
+        <a href="#reservas"><button>Reserva Ya!</button></a>
     </section>
 
     <section id="cafecito">
         <div class="container">
-            <div class="img-container"></div>
                 <h2>Sobre Nosotros</h2>
-                <p>En Aromas del Alba, creemos que el café no es solo una bebida, es un ritual, un momento sagrado para conversar, trabajar o simplemente desconectarse.
+                <p>En <strong>Café Las Lomas</strong> creemos que el café no es solo una bebida, es un ritual, un momento sagrado para conversar, trabajar o simplemente desconectarse.
                     Ubicados en Chinchina,Caldas. Somos una cafetería de especialidad que trabaja con caficultores locales para ofrecerte lo mejor del café colombiano, fresco y sostenible.
                     </p>
         </div>
     </section>
 
-    <section id="menu">
-        <div class="container">
-            <h2>Nuestro <span class="color-acent">Menu</span></h2>
-            <div class="productos">
-                <div class="carta">
-                    <h3>Capuccino</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor minus labore, non necessitatibus, libero doloremque corporis qui modi architecto sed vitae perferendis ad facere natus mollitia dolores recusandae est delectus!</p>
-                    <button>Ordenar</button>
-                </div>
-                <div class="carta">
-                    <h3>Amaretto</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor minus labore, non necessitatibus, libero doloremque corporis qui modi architecto sed vitae perferendis ad facere natus mollitia dolores recusandae est delectus!</p>
-                    <button>Ordenar</button>
-                </div>
-                <div class="carta">
-                    <h3>Affogato</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor minus labore, non necessitatibus, libero doloremque corporis qui modi architecto sed vitae perferendis ad facere natus mollitia dolores recusandae est delectus!</p>
-                    <button>Ordenar</button>
-                </div>
-            </div>            
-        </div>
-    </section>
+<section id="menu">
+    <div class="container">
+        <h2>Nuestro <span class="color-acent">Menú</span></h2>
+        <div class="productos">
+            <div class="carta">
+                <h3>Capuccino</h3>
+                <button>Ordenar</button>
+            </div>
+            <div class="carta">
+                <h3>Amaretto</h3>
+                <button>Ordenar</button>
+            </div>
+            <div class="carta">
+                <h3>Affogato</h3>
+                <button>Ordenar</button>
+            </div>
+        </div>            
+    </div>
+</section>
 
     <section class="ubicacion">
         <div class="container">
-            <div class="titulo-ubi">
                 <section class="text">
                     <h2>Ubicación</h2>
                     <p>Explora nuestro espacio: moderno, cálido, lleno de detalles que te invitan a quedarte. Desde nuestras mesas de madera reciclada hasta los murales hechos por artistas locales.<br>
@@ -77,26 +74,30 @@
                         Sábados y Domingos: 8:00 a.m. - 10:00 p.m.
                         </p>
                 </section>
-            </div>
-
+            <div class="map-container">
                 <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5004.600143710049!2d-75.61608102410304!3d4.989759839081982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e477bfec48c7989%3A0x6e49fcbe4fad1c1!2zQ2Fmw6kgTGEgTG9tYSDCrg!5e1!3m2!1ses!2sco!4v1749220832025!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>    
     </section>
 
-    <section class="reservas">
-        <div class="container">
-            <h2>Reserva la Mejor Mesa en la Mejor Cafeteria</h2>
-                <div class="labels">
-                    <label for="text">Nombre:</label>
-                    <input type="text" name="nombre" placeholder="Nombre" required>
-                    <label for="mail">Email:</label>
-                    <input type="email" name="correo" placeholder="Correo Electrónico" required>
-                    <label for="text">Detalles:</label>
-                    <textarea name="mensaje" placeholder="Detalles" required></textarea>
-                    <button type="submit">Enviar</button>
-                </div>
-        </div>       
-    </section>
+<section class="reservas">
+    <div class="container">
+        <h2>Reserva la Mejor Mesa en la Mejor Cafetería</h2>
+        <form class="labels">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+            
+            <label for="correo">Email:</label>
+            <input type="email" id="correo" name="correo" placeholder="Correo Electrónico" required>
+            
+            <label for="mensaje">Detalles:</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Detalles" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </div> 
+</section>
+
 
     <footer class="footer">
         <div class="container">
