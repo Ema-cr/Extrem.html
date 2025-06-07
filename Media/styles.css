@@ -1,0 +1,330 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin: 0;
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.9em;}
+p{font-size: 1.25em;}
+.logo{font-size: 3em;}
+
+.color-acent{
+    color: rgba(196, 131, 33, 1);
+}
+
+
+button {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 20px 30px;
+    border-radius: 10px;
+    border: 2px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color:white;
+    background-color:rgba(196, 131, 33, 1);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(104, 64, 4);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    transform: scale(1.1);              
+    cursor: pointer;
+}
+
+
+.container{
+    max-width: 1400px;
+    margin:auto;
+}
+
+header{
+    background-color: rgb(240, 224, 201);
+}
+
+header .logo{
+    font-weight: bold;
+    margin: 0;
+    padding: 25px 30px;
+    color: rgba(196, 131, 33, 1);
+
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: chocolate;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    ),url(Media/cafete.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 0 1rem;
+}
+
+#hero button{
+    margin-top: 20px;
+}
+
+#cafecito .container{
+    text-align: center;
+    padding: 80px 12px;
+}
+
+#menu{
+    text-align: center;
+    background-color: rgb(240, 224, 201);
+    color:white
+}
+
+
+#menu .container{
+    padding: 100px 12px;
+}
+
+#menu h2{
+    margin-top: 0;
+    font-size: 4em;
+
+}
+
+#menu p{
+    display: none;
+}
+
+#menu .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carta:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.6); 
+    cursor: pointer;
+}
+
+
+.carta:first-child{
+    background-image: linear-gradient(0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+)
+    ,url(Media/cafe-capuccino-1024x678.jpg);
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+)
+    ,url(Media/amaretto.jpg);
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(0deg,
+     rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+)
+    ,url(Media/affogato.jpg);
+}
+
+.ubicacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    min-height: 90vh;
+    color: rgba(196, 131, 33, 1); 
+    background-image: linear-gradient(0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url(Media/cafe-adentro.png);
+    background-size: cover;
+    background-position: center;
+    padding: 100px 12px;
+    text-align: center;
+
+}
+
+.map-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 15px; 
+  box-shadow: 0 0 10px rgba(0,0,0,0.3); 
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.text{
+    color: white;
+}
+
+.text h2{
+    color:rgb(255, 255, 255)
+}
+
+
+.reservas {
+  height: auto; 
+  padding: 60px 20px;
+  background-color: rgb(240, 224, 201);
+  color: rgba(196, 131, 33, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.reservas h2 {
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  color: rgb(139, 67, 0);
+}
+
+.labels {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 350px;
+  width: 100%;
+  gap: 20px;
+  background-color: rgba(196, 131, 33, 0.63);
+  padding: 30px;
+  border-radius: 15px;
+  color: white;
+  margin: 0 auto;
+}
+
+.labels label {
+  align-self: flex-start;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.labels input,
+.labels textarea {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1em;
+  resize: vertical;
+}
+
+.labels textarea {
+  min-height: 100px;
+}
+
+.labels button {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.3em;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 2px solid rgba(0,0,0,0.5);
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  color: white;
+  background-color: rgba(196, 131, 33, 1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.labels button:hover {
+  background-color: rgb(104, 64, 4);
+}
+
+.footer {
+  background-color: rgba(196, 131, 33, 0.9);
+  color: white;
+  font-size: 0.9em; 
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  border-top: 3px solid rgb(139, 67, 0); 
+  user-select: none; 
+}
+
+
+@media (min-width: 720px){
+
+
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+}
