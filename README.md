@@ -8,9 +8,14 @@ Bienvenido al sitio web de **Café Las Lomas**, una cafetería que ofrece experi
 
 Este proyecto es una página web estática desarrollada con HTML y CSS, diseñada para ser **responsive** y visualmente atractiva en cualquier dispositivo (móvil, tablet o escritorio).
 
+### 🏠 Página principal
+![Vista de la página principal](Media/vista-previa.png)
 
+### 📋 Sección Menú
+![Vista del menú](Media/vista-previa2.png)
 
-
+### 📍 Ubicación
+![Vista del mapa](Media/vista-previa3.png)
 ---
 
 ## ✨ Características principales
