@@ -10,21 +10,6 @@ Este proyecto es una página web estática desarrollada con HTML y CSS, diseñad
 
 
 
----
-
-## 📂 Estructura del proyecto
-
-cafe-las-lomas/
-├── index.html # Página principal del sitio
-├── Media/ # Carpeta de imágenes
-| ├── carta.css # Estilos personalizados
-│ ├── taza.png
-│ ├── cafete.jpg
-│ ├── cafe-capuccino-1024x678.jpg
-│ ├── amaretto.jpg
-│ ├── affogato.jpg
-│ └── cafe-adentro.png
-
 
 ---
 
